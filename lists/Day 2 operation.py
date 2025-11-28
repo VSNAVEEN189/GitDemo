@@ -1,4 +1,4 @@
-# Day 2 Extend, remove, pop
+ Day 2 Extend, remove, pop
 # Extend
 fruits = ["apple", "mango", "orange", "mango"]
 print(fruits)
