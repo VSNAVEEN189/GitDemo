@@ -1,14 +1,14 @@
-# # Lambda - function is a small,
-# #  anonymous function defined using the lambda keyword.
+# Lambda - function is a small,
+#  anonymous function defined using the lambda keyword.
 
-# # syntax
-# # lambda arguments: expression
+# syntax
+# lambda arguments: expression
 
-# fun = lambda a, b: a + b
-# result = fun(2, 3)
-# print(result)  # Output: 5
+fun = lambda a, b: a + b
+result = fun(2, 3)
+print(result)  # Output: 5
 
-print("----- Filter and Map using Lambda -----")
+print("----- Filter using Lambda -----")
 # Filter - filter(function, sequence)
 # can filter elements from an iterable using the built-in filter() function,
 #  a list comprehension, or a standard for loop with an if statement. 
