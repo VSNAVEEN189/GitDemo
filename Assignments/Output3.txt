@@ -1,0 +1,7 @@
+-------TASK 1------
+Factorial of 6 is: 720
+-------TASK 2-------
+Enter a number: 10
+Square root: 3.1622776601683795
+Natural logarithm: 2.302585092994046
+Sine (in radians): -0.5440211108893698

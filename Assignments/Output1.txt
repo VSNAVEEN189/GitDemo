@@ -1,0 +1,9 @@
+Enter a number: 8
+Enter another number: 7
+15.0
+1.0
+56.0
+1.1428571428571428
+Enter your first name: 4
+Enter your last name: 5
+Hello nice to meet you Mr.4 5
