@@ -4,25 +4,25 @@
 
 # To access in original data type is deserialization
 
-# students = {'student1': {'roll': 101, 'name': 'John', 'percent': 78.5},
-#             'student2': {'roll': 102, 'name': 'Carol', 'percent': 91.5},
-#             'student3': {'roll': 103, 'name': 'Alice', 'percent': 71.0}}
+students = {'student1': {'roll': 101, 'name': 'John', 'percent': 78.5},
+            'student2': {'roll': 102, 'name': 'Carol', 'percent': 91.5},
+            'student3': {'roll': 103, 'name': 'Alice', 'percent': 71.0}}
 
-# print(students)
-# print(type(students))
-
-
-# with open("students_info.txt", "w") as fh:
-#     fh.write(str(students))
+print(students)
+print(type(students))
 
 
-# with open("students_info.txt", "rt") as fh:
-#     content = fh.read()
+with open("students_info.txt", "w") as fh:
+    fh.write(str(students))
 
-# print(type(content))    
+
+with open("students_info.txt", "rt") as fh:
+    content = fh.read()
+
+print(type(content))    
 # Can't print back dict from the text file once converted to string.
-# out = dict(content)
-# print(out)
+out = dict(content)
+print(out)
 
 # to access to read back the data
 # pickle.dump()                      #To dump the content of the file
