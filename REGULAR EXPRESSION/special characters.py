@@ -1,27 +1,27 @@
 import re
 # # To create a pattern we use r 
 
-# s1 = "Python is a programming language"
+s1 = "Python is a programming language"
 
-# # [A-Z], [a-z]
-# pat = r"old\new"
-# print(pat)
-# pat = r"[A-Z][a-z][a-z]"
-# match_obj = re.search(pat, s1)
-# print(match_obj)
+# [A-Z], [a-z]
+pat = r"old\new"
+print(pat)
+pat = r"[A-Z][a-z][a-z]"
+match_obj = re.search(pat, s1)
+print(match_obj)
 
-# print("-----d and D-----")
+print("-----d and D-----")
 s2 = "Python is a programming Language. python3.13 is the current version."
-# # \d and \D
-# # \d matches 1 digit character. It is similar to [0-9]. followed by digit only 
-# pat = r"[a-z][a-z][a-z]\d"
-# match_obj = re.search(pat, s2)
-# print(match_obj)
+# \d and \D
+# \d matches 1 digit character. It is similar to [0-9]. followed by digit only 
+pat = r"[a-z][a-z][a-z]\d"
+match_obj = re.search(pat, s2)
+print(match_obj)
 
-# # \D matches 1 non-digit character. It is similar to [0-9]. Doesn't follow by any digit
-# pat = r"[a-z][a-z][a-z]\D"
-# match_obj = re.search(pat, s2)
-# print(match_obj)
+# \D matches 1 non-digit character. It is similar to [0-9]. Doesn't follow by any digit
+pat = r"[a-z][a-z][a-z]\D"
+match_obj = re.search(pat, s2)
+print(match_obj)
 
 print("----s, S----")
 # \s,\S
