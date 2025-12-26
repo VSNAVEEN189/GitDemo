@@ -1,4 +1,4 @@
-# # match() - focus only on first occurences.
+# match() - focus only on first occurences.
 import re
 s1 = "We are learning regex in Python"
 pat = r"[A-Z][a-z]"
