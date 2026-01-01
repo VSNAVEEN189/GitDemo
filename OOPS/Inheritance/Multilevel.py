@@ -1,5 +1,4 @@
 # A class a is inherited by b and c is inherited from b  automatically c inherits from a parent class.
-
 class Vehicle:
     company = "XYZ Motors"
 
