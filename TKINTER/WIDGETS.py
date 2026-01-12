@@ -84,9 +84,53 @@ option_2= ttk.Radiobutton(text="Female", variable=radio_value, value="female", c
 option_1.pack()
 option_2.pack()
 
+# Combobox
+selected_country = tk.StringVar()
+country_box = ttk.Combobox(textvariable=selected_country, values=["India", "USA", "Australia", "Sweden", "Canada"])
+country_box["state"] = "readonly"  # User can't enter their own value
+country_box.pack()
+
+def display_country(event):
+    msg = f"Selected country is : {selected_country.get()}"
+    country_label = ttk.Label(text=selected_country.get()) 
+    country_label.pack()  
+    # print(f"Selected country is : {selected_country.get()}")
+
+country_box.bind("<<ComboboxSelected>>", display_country)
+
+# Listbox
+food_items = ["Pizza", "Burger", "Garlic bread", "Nachos", "Salad"]
+fav_food = tk.StringVar(value=food_items)
+
+food_list=tk.Listbox(listvariable=fav_food, height=5, selectmode="extended")  #selectmode can choose multiple options
+food_list.pack()
+
+def get_fav_food(event):
+    food_indices = food_list.curselection()  # returns tuple of indices of selected items
+    for i in food_indices:
+        print(food_list.get(i))
+
+food_list.bind("<<ListboxSelect>>", get_fav_food)
+
+#Spinbox - It's like a counter with up and down arrows 
+counter = tk.IntVar(value=10)
+
+def get_spin_box_value():
+    print(f"Current spinbox value: {spin_box.get()}")
+
+spin_box = ttk.Spinbox(values=tuple(range(0, 105, 5)), textvariable=counter, wrap=True, command=get_spin_box_value)
+spin_box.pack()
+
+print(f"Initial spinbox value: {spin_box.get()}")  #To get the current value of spinbox to get each time we have to create a function 
+
 window.mainloop()    
 
 # padding=15 Wont't work for button
 # checkbutton is combinaton of button and label
 # Class for tkinter integer IntVar, for string values StringVar. to add some values after clicking checkbox onvalue="Yes", offvalue="No"
 # Radio buttons are used in forms
+
+# combobox, readonly created an event using bind method
+# string var should not be assigned to listbox using textvariable, use listvariable instead
+# Both of them uses bind method to trigger an event and get selected items
+# wrap in spinbox makes the value to start from beginning when it reaches the max values
