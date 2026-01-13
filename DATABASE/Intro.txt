@@ -1,0 +1,22 @@
+Data is a collection of information it can be in any form text nuber media etc
+
+Base - Organized
+Database  - Will be in a organized manner in tables-rows and columns later it can be managed update
+database are like Mysql, postgreSQL, MongoDB etc
+Types of database are:
+HIERARCHICAL DATABASE
+NoSQL DATABASE
+OBJECT ORIENTED DATABASE
+RELATIONAL DATABASE -  categorized by set of tables
+NETWORK DATABASE
+
+SQL (Structured Query Language) - act as application interface, Easier to modify- Extended or joing
+postgreSQL -  It is a object-relational database, Open source, Building commercial apps.
+
+Checking list of database \l
+For creating database type    create database database name;
+For connecting database type  \c database database name;
+For deleting database type    drop database database name;
+For creating table type       CREATE TABLE table name(frame name with data type);  
+For list of relations type    \d 
+For adding data inside table
