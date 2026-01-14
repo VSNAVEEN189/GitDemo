@@ -19,4 +19,18 @@ For connecting database type  \c database database name;
 For deleting database type    drop database database name;
 For creating table type       CREATE TABLE table name(frame name with data type);  
 For list of relations type    \d 
-For adding data inside table
+For adding data inside table  INSERT INTO table name() VALUES()
+
+To get selected data from the database type    SELECT * FROM table name
+For selecting certain data type       SELECT name FROM table name;
+While filtering large data type    SELECT * FROM table name WHERE column name;
+For removing the content of the table type  TRUNCATE TABLE table name;
+
+Setting up Virtualenv
+1. pip install Virtualenv
+2. creating folder virtual env
+3. next scripts - cd scripts
+4. activate by - activate inside scripts
+
+psycopg2- Connects python with postgreSQL database
+installing psycopg2 - pip3 install psycopg2-binary
