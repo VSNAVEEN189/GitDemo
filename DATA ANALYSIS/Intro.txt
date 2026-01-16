@@ -1,0 +1,60 @@
+Data analysis is collection of data 
+processing-
+ comparization
+ inspection
+cleaning
+summarization 
+
+Libraries
+1.
+SCIENTIFIC COMPUTING LIBRARIES:
+PANDAS - 2D-Array purpose of data frame, datastructure and tools, read the data
+NUMPY - Arrays and matrices
+SCI-PY - Differentional solving problem optimising
+
+2.
+VISUALIZATION LIBRARIES:
+SEABORN - Plotting graphs, heat maps,
+MATPLOTLIB - For plotting grpahs
+
+3.
+ALGORITHMIC LIBRARIES:
+SCIKIT LEARN - Machine leraning concepts
+STATS MODELS - Exploring data and statistical models 
+
+Properties
+1.
+File format(.csv,.json,.hdf,.xlsx)
+
+2.
+File path(C:/DESKTOP/MY Files/mydata.csv)
+
+
+For importing a file in jupyter use code:
+import pandas as pd
+path = "C:/Users/VICTUS/OneDrive/archive.zip"
+df = pd.read_csv(path)
+print(df)
+
+Methods to view file
+To display no.of rows df.head(2) from top 
+To display no.of rows from last df.tail()
+For saving the file df.to_csv(path)
+For checking the data type - df.dtypes
+For statistical summary - df.dtypes
+Full statistical summary - df.describe(include="all")
+NaN	- Number of distinct column (unique) not a number
+Provides consice summary of data frame - df.info()
+For displaying the columns in data frame with data type - df.columns
+For preprocessing - converting raw data into summarize form of data
+
+Changing or creating headers
+headers = ["S.No", "Even","odd","Multiples 5", "Multiples 3", "Multiples 4"]
+df.columns = headers
+df.head(5)
+
+To remove a row or column - df.drop([Mention label])  0-row,1-column
+To remove nan - df.dropna()
+using numpy 
+import numpy as np
+df["Column name"].replace(np.nan,values)
